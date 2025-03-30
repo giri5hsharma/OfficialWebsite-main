@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team | FOSS Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/animations.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="./index.html" class="logo">
+        <img src="./assets/Images/logo.svg" alt="FOSS Logo">
+        <span>FOSS</span>
+      </a>
+  
+      <button id="open-menu"  onclick="opensidebar()"><img src="assets/Images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" height="50px" width="50px" alt=""></button>
+  
+      <ul class="nav-links">
+        <li><button id="close-menu" onclick="closesidebar()"><img src="assets/Images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" height="50px" width="50px" alt=""></button></li>
+        <li><a href="./index.html" >Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./events.html">Events</a></li>
+        <li><a href="./team.html" class="active" >Team</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div id="overlay" onclick="closesidebar()" aria-hidden="true"></div>
+  
+
+<section class="page-banner parallax">
+  <div class="page-banner-content fade-in-up">
+    <h1 class="glitch-text" data-text="Our Team">Our Team</h1>
+    <p>Meet the passionate minds behind FOSS Club</p>
+  </div>
+</section>
+
+<div class="team-container">
+  <!-- Club President -->
+  <div class="team-section leadership">
+    <h2 class="section-title">Leadership</h2>
+    <div class="team-card leader">
+      <div class="member-image">
+        <img src="./assets/team/soham.jpg" alt="Soham Kulkarni">
+      </div>
+      <div class="member-info">
+        <div class="leader-badge">Club President</div>
+        <h3>Soham Kulkarni</h3>
+        <p>Leading FOSS initiatives with passion and innovation</p>
+        <div class="social-links">
+          <a href="https://github.com/Netherquark" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/soham-shirish-kulkarni/" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Department Heads -->
+  <div class="team-section heads">
+    <h2 class="section-title">Department Heads</h2>
+    <div class="heads-grid">
+      <div class="team-card head">
+        <div class="department-badge technical">Technical</div>
+        <div class="member-image">
+          <img src="./assets/team/sharan.jpg" alt="A. Sharan">
+        </div>
+        <div class="member-info">
+          <h3>A. Sharan</h3>
+          <div class="member-role">Technical Head</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Full Stack</span>
+            <span class="skill-tag">DevOps</span>
+            <span class="skill-tag">Cloud</span>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/sharana" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ahsharan/" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card head">
+        <div class="department-badge documentation">Documentation</div>
+        <div class="member-image">
+          <img src="assets/team/ansh.jpg" alt="Ansh">
+        </div>
+        <div class="member-info">
+          <h3>Ansh</h3>
+          <div class="member-role">Documentation Head</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Technical Writing</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Wiki</span>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Ansh35k" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sai-ansh-batho-aa3327256/ " class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card head">
+        <div class="department-badge pr">PR & Outreach</div>
+        <div class="member-image">
+          <img src="assets/team/ahmed.jpg" alt="Ahmed">
+        </div>
+        <div class="member-info">
+          <h3>Ahmed</h3>
+          <div class="member-role">PR & Outreach Head</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Community</span>
+            <span class="skill-tag">Events</span>
+            <span class="skill-tag">Networking</span>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/ahmed" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/ahmed" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card head">
+        <div class="department-badge media">Media</div>
+        <div class="member-image">
+          <img src="assets/team/sreevals.jpg" alt="Sreevals">
+        </div>
+        <div class="member-info">
+          <h3>Sreevals</h3>
+          <div class="member-role">Media Head</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Design</span>
+            <span class="skill-tag">Social</span>
+            <span class="skill-tag">Content</span>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/sreevals" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sreevals-nair-37a851320/" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Technical Team -->
+<div class="team-section">
+  <h2 class="section-title">Technical Team</h2>
+  <div class="team-grid members">
+    <div class="team-card member">
+      <div class="member-image">
+        <img src="assets/team/aakash.jpg" alt="Aakash Jagannath">
+      </div>
+      <div class="member-info">
+        <h3>Aakash Jagannath</h3>
+      </div>
+    </div>
+    <div class="team-card member">
+      <div class="member-image">
+        <img src="assets/team/abhi.jpg" alt="Abhishek Hardaha">
+      </div>
+      <div class="member-info">
+        <h3>Abhishek Hardaha</h3>
+      </div>
+    </div>
+    <div class="team-card member">
+      <div class="member-image">
+        <img src="assets/team/balaji.jpg" alt="Balaji Naik">
+      </div>
+      <div class="member-info">
+        <h3>Balaji Naik</h3>
+      </div>
+    </div>
+    <div class="team-card member">
+      <div class="member-image">
+        <img src="assets/team/divyansh.jpg" alt="Divyansh Agarwal">
+      </div>
+      <div class="member-info">
+        <h3>Divyansh Agarwal</h3>
+      </div>
+    </div>
+    <div class="team-card member">
+      <div class="member-image">
+        <img src="assets/team/kdee.jpg" alt="Karmadeept Sarkar">
+      </div>
+      <div class="member-info">
+        <h3>Karmadeept Sarkar</h3>
+      </div>
+    </div>
+    
+    <div class="team-card member">
+      <div class="member-image">
+        <img src="assets/team/niral.jpg" alt="Niral Mistry">
+      </div>
+      <div class="member-info">
+        <h3>Niral Mistry</h3>
+      </div>
+    </div>
+    <div class="team-card member">
+      <div class="member-image">
+        <img src="assets/team/niyati.jpg" alt="Niyati Dave">
+      </div>
+      <div class="member-info">
+        <h3>Niyati Dave</h3>
+      </div>
+    </div>
+    <div class="team-card member">
+      <div class="member-image">
+        <img src="assets/team/vedant.jpg" alt="Vedant Shinde">
+      </div>
+      <div class="member-info">
+        <h3>Vedant Shinde</h3>
+      </div>
+    </div>
+    <div class="team-card member">
+      <div class="member-image">
+        <img src="assets/team/vinamra.jpg" alt="Vinamra Jain">
+      </div>
+      <div class="member-info">
+        <h3>Vinamra Jain</h3>
+      </div>
+    </div>
+    <div class="team-card member">
+      <div class="member-image">
+        <img src="assets/team/eesha.png" alt="Eesha Barad">
+      </div>
+      <div class="member-info">
+        <h3>Eesha Barad</h3>
+      </div>
+    </div>
+    <div class="team-card member">
+      <div class="member-image">
+        <img src="assets/team/Samarth.jpg" alt="Samarth Bhadane">
+      </div>
+      <div class="member-info">
+        <h3>Samarth Bhadane</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Documentation Team -->
+  <div class="team-section">
+    <h2 class="section-title">Documentation Team</h2>
+    <div class="team-grid members">
+      <div class="team-card member">
+        <div class="member-image">
+          <img src="assets/team/Maazin.jpg" alt="Maazin Kazi">
+        </div>
+        <div class="member-info">
+          <h3>Maazin Kazi</h3>
+        </div>
+      </div>
+      <div class="team-card member">
+        <div class="member-image">
+          <img src="assets/team/Anshuman_G.jpg" alt="Anshuman Gahlot">
+        </div>
+        <div class="member-info">
+          <h3>Anshuman Gahlot</h3>
+        </div>
+      </div>
+      <div class="team-card member">
+        <div class="member-image">
+          <img src="assets/team/Om_D.jpg" alt="Om Dhamame">
+        </div>
+        <div class="member-info">
+          <h3>Om Dhamame</h3>
+        </div>
+      </div>
+      
+        <!-- Repeat for 4 more members -->
+    </div>
+  </div>
+
+  <!-- PR Team -->
+  <div class="team-section">
+    <h2 class="section-title">PR & Events Team</h2>
+    <div class="team-grid members">
+      <div class="team-card member">
+        <div class="member-image">
+          <img src="assets/team/Manaswi.jpg" alt="Manaswi">
+        </div>
+        <div class="member-info">
+          <h3>Manasvi Pawa</h3>
+        </div>
+      </div>
+      
+      
+      <div class="team-card member">
+        <div class="member-image">
+          <img src="assets/team/girish.jpg" alt="Girish Sharma">
+        </div>
+        <div class="member-info">
+          <h3>Girish Sharma</h3>
+        </div>
+      </div>
+      <div class="team-card member">
+        <div class="member-image">
+          <img src="assets/team/neel.jpg" alt="Person 2">
+        </div>
+        <div class="member-info">
+          <h3>Neil Cardoz</h3>
+        </div>
+      </div>
+      <div class="team-card member">
+        <div class="member-image">
+          <img src="assets/team/Utkarsh.jpg" alt="Utkarsh Srivastava">
+        </div>
+        <div class="member-info">
+          <h3>Utkarsh Srivastava</h3>
+        </div>
+      </div>
+      <div class="team-card member">
+        <div class="member-image">
+          <img src="assets/team/" alt="Person 2">
+        </div>
+        <div class="member-info">
+          <h3>Aditya Roy</h3>
+        </div>
+      </div>
+        <!-- Repeat for 4 more members -->
+    </div>
+  </div>
+
+  <!-- Media Team -->
+  <div class="team-section">
+    <h2 class="section-title">Media Team</h2>
+    <div class="team-grid members">
+      
+      <div class="team-card member">
+        <div class="member-image">
+          <img src="assets/team/Shiwam.jpg" alt="Person 2">
+        </div>
+        <div class="member-info">
+          <h3>Shiwam Sarraf</h3>
+        </div>
+      </div>
+      <div class="team-card member">
+        <div class="member-image">
+          <img src="assets/team/vinamra.jpg" alt="Person 2">
+        </div>
+        <div class="member-info">
+          <h3>Vinamra Jain</h3>
+        </div>
+      </div>
+      <div class="team-card member">
+        <div class="member-image">
+          <img src="assets/team/Soumya.jpg" alt="Person 2">
+        </div>
+        <div class="member-info">
+          <h3>Soumya Mapara</h3>
+        </div>
+      </div>
+      <div class="team-card member">
+        <div class="member-image">
+          <img src="assets/team/Mayank.jpg" alt="Person 2">
+        </div>
+        <div class="member-info">
+          <h3>Mayank Hete</h3>
+        </div>
+      </div>
+        <!-- Repeat for 4 more members -->
+    </div>
+  </div>
+</div>
+
+<section class="join-team-section fade-in-up">
+  <h2>Join Our Team</h2>
+  <p>We're always looking for passionate individuals to join our community</p>
+  <a href="contact.html" class="cta-button glow-effect">Get Involved</a>
+</section>
+
+<footer class="footer">
+  <p>© 2025 FOSS Club</p>
+</footer>
+<script src="./js/script.js"></script>
+<script src="./js/navigation.js"></script>
+</body>
+</html>

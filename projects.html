@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | FOSS Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="./index.html" class="logo">
+        <img src="./assets/Images/logo.svg" alt="FOSS Logo">
+        <span>FOSS</span>
+      </a>
+  
+      <button id="open-menu"  onclick="opensidebar()"><img src="assets/Images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" height="50px" width="50px" alt=""></button>
+  
+      <ul class="nav-links">
+        <li><button id="close-menu" onclick="closesidebar()"><img src="assets/Images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" height="50px" width="50px" alt=""></button></li>
+        <li><a href="./index.html" >Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./projects.html" class="active" >Projects</a></li>
+        <li><a href="./events.html">Events</a></li>
+        <li><a href="./team.html">Team</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div id="overlay" onclick="closesidebar()" aria-hidden="true"></div>
+  
+<section class="page-banner parallax">
+  <div class="page-banner-content fade-in-up">
+    <h1 class="glitch-text" data-text="Our Projects">Our Projects</h1>
+    <p>Explore our open-source initiatives</p>
+  </div>
+</section>
+
+<div class="projects-container">
+  <div class="project-card featured">
+    <div class="project-header">
+      <img src="assets/projects/ecotracker.jpg" alt="Android auto">
+      <div class="project-badge">Featured</div>
+    </div>
+    <div class="project-content">
+      <h3>Android auto</h3>
+      <p>Android auto unit for Vehicle</p>
+      <div class="tech-stack">
+        <span class="tech-tag">Android</span>
+      </div>
+      <div class="project-meta">
+        <span><i class="fas fa-code-branch"></i> Active Development</span>
+        <span><i class="fas fa-users"></i> 12 Contributors</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/fossclub/ecotracker" class="github-link">
+          <i class="fab fa-github"></i> View Source
+        </a>
+        <a href="https://ecotracker.demo.com" class="demo-link">
+          <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <img src="assets/Images/FOSS_website.png" alt="CommunityCare">
+    </div>
+    <div class="project-content">
+      <h3>FOSS Website</h3>
+      <p>Website designed to increase the clubs Transparency to 3rd person POV (yes this one)</p>
+      <div class="tech-stack">
+        <span class="tech-tag">html, css, javascript</span>
+      </div>
+      <div class="project-meta">
+        <span><i class="fas fa-code-branch"></i> Testing</span>
+        <span><i class="fas fa-users"></i> 15 Contributors</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/fossclub/communitycare" class="github-link">
+          <i class="fab fa-github"></i> View Source
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-header">
+        <img src="assets/Images/Linux_from_scratch.jpg" alt="Linux from scratch">
+      </div>
+      <div class="project-content">
+        <h3>Linux from scratch</h3>
+        <p>Compile Linux form scratch</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Linux</span>
+        </div>
+        <div class="project-meta">
+          <span><i class="fas fa-code-branch"></i> Beta</span>
+          <span><i class="fas fa-users"></i> 8 Contributors</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/fossclub/communitycare" class="github-link">
+            <i class="fab fa-github"></i> View Source
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <img src="assets/Images/NAS.jpeg" alt="CommunityCare">
+      </div>
+      <div class="project-content">
+        <h3>NAS</h3>
+        <p>Network Attach Server to store your date</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Linux</span>
+          <span class="tech-tag">Twigate</span>
+        </div>
+        <div class="project-meta">
+          <span><i class="fas fa-code-branch"></i> Beta</span>
+          <span><i class="fas fa-users"></i> 8 Contributors</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/fossclub/communitycare" class="github-link">
+            <i class="fab fa-github"></i> View Source
+          </a>
+        </div>
+      </div>
+    </div>
+   
+   
+    <div class="project-card">
+      <div class="project-header">
+        <img src="assets/images/RL_snake_game.png" width="400px" hieght="400px" alt="snake game demo">
+      </div>
+      <div class="project-content">
+        <h3>RL powered snake game</h3>
+        <p>classic version of snake game powered by reinforcement learning</p>
+        <div class="tech-stack">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">RL Libraries</span>
+          <span class="tech-tag">Tensorflow</span>
+        </div>
+        <div class="project-meta">
+          <span><i class="fas fa-code-branch"></i> Testing</span>
+          <span><i class="fas fa-users"></i> 8 Contributors</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/fossclub/communitycare" class="github-link">
+            <i class="fab fa-github"></i> View Source
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Add more project cards with similar structure -->
+  </div>
+</div>
+
+<section class="get-involved fade-in-up">
+  <div class="involved-content">
+    <h2>Want to Contribute?</h2>
+    <p>Join our community and help build these amazing projects!</p>
+    <div class="involvement-steps">
+      <div class="step">
+        <i class="fas fa-code-branch"></i>
+        <h3>Fork</h3>
+        <p>Clone our repositories</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-code"></i>
+        <h3>Code</h3>
+        <p>Make your changes</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-pull-request"></i>
+        <h3>Submit</h3>
+        <p>Create a pull request</p>
+      </div>
+    </div>
+    <a href="https://github.com/FOSSClubSIT/OfficialWebsite" class="cta-button glow-effect">Start Contributing</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 FOSS Club</p>
+</footer>
+<script src="js/script.js"></script>
+<script src="./js/navigation.js"></script>
+</body>
+</html>
